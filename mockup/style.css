@@ -2,13 +2,18 @@ body {
   background-color: #E5E5E5;
 }
 
-
-.panel-container {
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 35% 1fr;
   grid-template-rows: repeat(auto-fill, auto);
   grid-row-gap: 10px;
   align-items: center;
+}
+
+.flex-container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .panel-title {
@@ -18,8 +23,29 @@ body {
 
 .swatch-panel {
   /*margin: 0 auto;*/
-  grid-column: 2;
+  padding: 8%;
   background-color: #FFFFFF;
+  display: flex;
 }
 
-/*72 pixels for color swatch*/
+.swatch-row {
+  display: flex;
+  height: 72px;
+}
+
+.swatch {
+  flex: 0 0 72px;
+}
+
+#purple {
+  background-color: purple;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+/* 72 pixels for color swatch*/
+/*
+ * were going to need a top-level layout div in grid
+ */
