@@ -21,7 +21,7 @@ body {
   align-items: center;
 }
 
-.invisible-flex-container {
+.panel-container {
   grid-column: 2;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@ body {
   grid-column: 2;
   color: #A0A0A0;
   font-size: 12px;
+  margin-top: 1rem;
 }
 
 .white-panel {
@@ -48,7 +49,7 @@ body {
 
 .swatch-row {
   display: flex;
-  background-color: green;
+  /*background-color: green;*/
   justify-content: flex-start;
   /*width: 100%;*/
   display: flex;
@@ -56,8 +57,17 @@ body {
 }
 
 .swatch {
+  position: relative;
   flex: 0 0 72px;
   height: 72px;
+}
+
+.swatch-details {
+  position: absolute;
+  bottom: 0;
+  font-size: 8px;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 #purple {
