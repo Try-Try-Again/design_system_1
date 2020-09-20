@@ -13,6 +13,39 @@ body {
   background-color: #E5E5E5;
 }
 
+h1 {
+  font-size: 4.209em;
+}
+h2 {
+  font-size: 3.157em;
+}
+h3 {
+  font-size: 2.369em;
+}
+h4 {
+  font-size: 1.777em;
+}
+h5 {
+  font-size: 1.333em;
+}
+p {
+  font-size: 1em;
+}
+.helper {
+  font-size: 0.75em;
+}
+.copyright {
+  font-size: 0.563em;
+}
+
+.type-panel {
+  background-color: #FFFFFF;
+}
+.type-panel-dark {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 .master-grid-container {
   display: grid;
   grid-template-columns: 1fr 35% 1fr;
@@ -44,7 +77,6 @@ body {
   background-color: #FFFFFF;
   width: 100%;
   padding: 20px;
-
 }
 
 .swatch-row {
@@ -97,7 +129,6 @@ body {
 #text-inverted{
   background-color: #ffffff;
 }
-
 #neutral-100{
   background-color: #ffffff;
 }
