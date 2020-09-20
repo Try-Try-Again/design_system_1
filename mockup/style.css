@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 *,
@@ -30,18 +31,19 @@ body {
 
 .panel-title {
   grid-column: 2;
-  color: gray;
+  color: #A0A0A0;
+  font-size: 12px;
 }
 
 .white-panel {
-  /*margin: 0 auto;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /*border: 1em #FFFFFF solid;*/
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
   background-color: #FFFFFF;
   width: 100%;
   padding: 20px;
+
 }
 
 .swatch-row {
@@ -66,7 +68,3 @@ body {
   background-color: yellow;
 }
 
-/* 72 pixels for color swatch*/
-/*
- * were going to need a top-level layout div in grid
- */
