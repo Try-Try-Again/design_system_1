@@ -70,11 +70,76 @@ body {
   margin-left: 1em;
 }
 
-#purple {
-  background-color: purple;
+.inverted {
+  color: #ffffff;
+}
+.black-border {
+ border: 1px #000000 solid;
+}
+#primary-100{
+  background-color: #B80AFC;
+}
+#primary-200{
+  background-color: #DBCBE1;
+}
+#primary-300{
+  background-color: #0E0512;
+}
+#primary-400{
+  background-color: #490763;
+}
+#primary-500{
+  background-color: #9B31C4;
+}
+#text{
+  background-color: #000000;
+}
+#text-inverted{
+  background-color: #ffffff;
 }
 
-#yellow {
-  background-color: yellow;
+#neutral-100{
+  background-color: #ffffff;
 }
-
+#neutral-200{
+  background-color: #f4f5f7;
+}
+#neutral-300{
+  background-color: #e1e1e1;
+}
+#neutral-400{
+  background-color: #737581;
+}
+#neutral-500{
+  background-color: #4a4b53;
+}
+#neutral-600{
+  background-color: #000000;
+}
+#success-100{
+  background-color: #529E66;
+}
+#success-200{
+  background-color: #367B48;
+}
+#success-300{
+  background-color: #276738;
+}
+#error-100{
+  background-color: #D0454C;
+}
+#error-200{
+  background-color: #B54248;
+}
+#error-300{
+  background-color: #95353A;
+}
+#warning-100{
+  background-color: #E1C542;
+}
+#warning-200{
+  background-color: #CAB23F;
+}
+#warning-300{
+  background-color: #B49E35;
+}
