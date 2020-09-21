@@ -2,17 +2,14 @@ html {
   box-sizing: border-box;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
 body {
   background-color: #E5E5E5;
 }
-
 h1 {
   font-size: 4.209em;
 }
@@ -37,30 +34,23 @@ p {
 .copyright {
   font-size: 0.563em;
 }
-
-.type-panel {
+.white-grid-panel {
   display: grid;
-  /*grid-auto-rows: 1fr;*/
-  /*grid-template-columns: 1fr;*/
   grid-gap: 15px;
   background-color: #FFFFFF;
   padding: 20px;
 }
-
-.swatch-row-grid {
+.swatch-row {
   display: grid;
   grid-auto-columns: 75px;
   grid-template-rows: 75px;
   grid-auto-flow: column;
-  /*display: flex;*/
-
 }
-
 .type-panel-dark {
   color: #ffffff;
   background-color: #000000;
 }
-
+/* next we'll change this to be 1 column of varying width*/
 .master-grid-container {
   display: grid;
   grid-template-columns: 1fr 35% 1fr;
@@ -68,7 +58,7 @@ p {
   grid-row-gap: 10px;
   align-items: center;
 }
-
+/* we'll change this to column 1? */
 .panel-container {
   grid-column: 2;
   display: flex;
@@ -76,39 +66,17 @@ p {
   align-items: flex-start;
   flex-grow: 1;
 }
-
 .panel-title {
   grid-column: 2;
   color: #A0A0A0;
   font-size: 12px;
   margin-top: 1rem;
 }
-
-.white-panel {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  background-color: #FFFFFF;
-  width: 100%;
-  padding: 20px;
-}
-
-.swatch-row {
-  display: flex;
-  /*background-color: green;*/
-  justify-content: flex-start;
-  /*width: 100%;*/
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .swatch {
   position: relative;
   flex: 0 0 72px;
   height: 72px;
 }
-
 .swatch-details {
   position: absolute;
   bottom: 0;
@@ -116,76 +84,75 @@ p {
   margin-bottom: 1em;
   margin-left: 1em;
 }
-
 .inverted {
   color: #ffffff;
 }
 .black-border {
  border: 1px #000000 solid;
 }
-#primary-100{
+#primary-100 {
   background-color: #B80AFC;
 }
-#primary-200{
+#primary-200 {
   background-color: #DBCBE1;
 }
-#primary-300{
+#primary-300 {
   background-color: #0E0512;
 }
-#primary-400{
+#primary-400 {
   background-color: #490763;
 }
-#primary-500{
+#primary-500 {
   background-color: #9B31C4;
 }
 #text{
   background-color: #000000;
 }
-#text-inverted{
+#text-inverted {
   background-color: #ffffff;
 }
-#neutral-100{
+#neutral-100 {
   background-color: #ffffff;
 }
-#neutral-200{
+#neutral-200 {
   background-color: #f4f5f7;
 }
-#neutral-300{
+#neutral-300 {
   background-color: #e1e1e1;
 }
-#neutral-400{
+#neutral-400 {
   background-color: #737581;
 }
-#neutral-500{
+#neutral-500 {
   background-color: #4a4b53;
 }
-#neutral-600{
+#neutral-600 {
   background-color: #000000;
 }
-#success-100{
+#success-100 {
   background-color: #529E66;
 }
-#success-200{
+#success-200 {
   background-color: #367B48;
 }
-#success-300{
+#success-300 {
   background-color: #276738;
 }
-#error-100{
+#error-100 {
   background-color: #D0454C;
 }
-#error-200{
+#error-200 {
   background-color: #B54248;
 }
-#error-300{
+#error-300 {
   background-color: #95353A;
 }
-#warning-100{
+#warning-100 {
   background-color: #E1C542;
 }
-#warning-200{
+#warning-200 {
   background-color: #CAB23F;
 }
-#warning-300{
+#warning-300 {
   background-color: #B49E35;
 }
