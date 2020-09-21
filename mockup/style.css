@@ -39,8 +39,23 @@ p {
 }
 
 .type-panel {
+  display: grid;
+  /*grid-auto-rows: 1fr;*/
+  /*grid-template-columns: 1fr;*/
+  grid-gap: 15px;
   background-color: #FFFFFF;
+  padding: 20px;
 }
+
+.swatch-row-grid {
+  display: grid;
+  grid-auto-columns: 75px;
+  grid-template-rows: 75px;
+  grid-auto-flow: column;
+  /*display: flex;*/
+
+}
+
 .type-panel-dark {
   color: #ffffff;
   background-color: #000000;
