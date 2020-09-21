@@ -7,106 +7,8 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  background-color: #E5E5E5;
-}
-h1,
-.h1-example {
-  font-size: 4.209em;
-  font-weight: bold;
-}
-h2,
-.h2-example {
-  font-size: 3.157em;
-  font-weight: bold;
-}
-h3,
-.h3-example {
-  font-size: 2.369em;
-  font-weight: bold;
-}
-h4,
-.h4-example {
-  font-size: 1.777em;
-  font-weight: bold;
-}
-h5,
-.h5-example {
-  font-size: 1.333em;
-  font-weight: bold;
-}
-p,
-.p-example {
-  font-size: 1em;
-}
-.helper {
-  font-size: 0.75em;
-}
-.copyright {
-  font-size: 0.563em;
-}
-.white-grid-panel {
-  display: grid;
-  grid-gap: 15px;
-  background-color: #FFFFFF;
-  padding: 20px;
-}
-.swatch-row {
-  display: grid;
-  grid-auto-columns: 75px;
-  grid-template-rows: 75px;
-  grid-auto-flow: column;
-}
-.type-panel-dark {
-  color: #ffffff;
-  background-color: #000000;
-  padding: 20px;
-}
-.type-panel {
-  color: #000000;
-  background-color: #ffffff;
-  padding: 20px;
-}
-/* next we'll change this to be 1 column of varying width*/
-.master-grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(auto-fill, auto);
-  grid-row-gap: 10px;
-  justify-content: center;
-}
-/* we'll change this to column 1? */
-.panel-container {
-  grid-column: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-grow: 1;
-}
-.panel-title {
-  grid-column: 2;
-  color: #A0A0A0;
-  font-size: 12px;
-  margin-top: 1rem;
-}
-.swatch {
-  position: relative;
-  flex: 0 0 72px;
-  height: 72px;
-}
-.swatch-details {
-  position: absolute;
-  bottom: 0;
-  font-size: 8px;
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-.inverted {
-  color: #ffffff;
-}
-.black-border {
- border: 1px #000000 solid;
-}
+
+/* colors */
 #primary-100 {
   background-color: #B80AFC;
 }
@@ -172,4 +74,110 @@ p,
 }
 #warning-300 {
   background-color: #B49E35;
+}
+
+
+/* typeography */
+h1,
+.h1-example {
+  font-size: 4.209em;
+  font-weight: bold;
+}
+h2,
+.h2-example {
+  font-size: 3.157em;
+  font-weight: bold;
+}
+h3,
+.h3-example {
+  font-size: 2.369em;
+  font-weight: bold;
+}
+h4,
+.h4-example {
+  font-size: 1.777em;
+  font-weight: bold;
+}
+h5,
+.h5-example {
+  font-size: 1.333em;
+  font-weight: bold;
+}
+p,
+.p-example {
+  font-size: 1em;
+}
+.helper {
+  font-size: 0.75em;
+}
+.copyright {
+  font-size: 0.563em;
+}
+
+
+/* design system presentation */
+body {
+  background-color: #E5E5E5;
+}
+.white-grid-panel {
+  display: grid;
+  grid-gap: 15px;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+.swatch-row {
+  display: grid;
+  grid-auto-columns: 75px;
+  grid-template-rows: 75px;
+  grid-auto-flow: column;
+}
+.type-panel-dark {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 20px;
+}
+.type-panel {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+}
+/* next we'll change this to be 1 column of varying width*/
+.master-grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+/* we'll change this to column 1? */
+.panel-container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.panel-title {
+  grid-column: 2;
+  color: #A0A0A0;
+  font-size: 12px;
+  margin-top: 1rem;
+}
+.swatch {
+  position: relative;
+  flex: 0 0 72px;
+  height: 72px;
+}
+.swatch-details {
+  position: absolute;
+  bottom: 0;
+  font-size: 8px;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.inverted {
+  color: #ffffff;
+}
+.black-border {
+ border: 1px #000000 solid;
 }
