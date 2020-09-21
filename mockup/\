@@ -8,11 +8,10 @@
     <body>
       <div class="master-grid-container">
         <div class="panel-container">
-          <h1>Design System 1</h1>
           <div class="panel-title">
             Colors
           </div>
-          <div class="white-grid-panel">
+          <div class="white-grid-panel copyright">
             <div class="swatch-row">
               <div class="swatch" id="primary-100">
                 <div class="swatch-details">
@@ -196,65 +195,6 @@
             <div class="p-example">Paragraph - 1em (16.00px)</div>
             <div class="helper">Helper Text - 0.75em (12.00px) </div>
             <div class="copyright">Copyright Text - 0.563em (9.00px) </div>
-          </div>
-        </div>
-        <div class="panel-container">
-          <div class="panel-title">
-            Buttons
-          </div>
-          <div class="type-panel">
-            <div class="button-grid copyright">
-              <div class="primary status-name">
-                Primary
-              </div>
-              <div class="secondary status-name">
-                Secondary
-              </div>
-              <div class="tertiary status-name">
-                Tertiary
-              </div>
-              <div class="large status-name">
-                Large
-              </div>
-              <div class="small status-name">
-                Small
-              </div>
-              <div class="icon status-name">
-                Icon
-              </div>
-              <div class="labeled-icon status-name">
-                Labeled-Icon
-              </div>
-              <div class="warning status-name">
-                Warning
-              </div>
-              <div class="error status-name">
-                Error
-              </div>
-              <div class="success status-name">
-                Success
-              </div>
-              <div class="default type-name">
-                Default
-              </div>
-              <div class="hover type-name">
-                Hover
-              </div>
-              <div class="focus type-name">
-                Focus
-              </div>
-              <div class="active type-name">
-                Active
-              </div>
-              <div class="disabled type-name">
-                Disabled
-              </div>
-              <div class="primary default"></div>
-              <div class="primary hover"></div>
-              <div class="primary focus"></div>
-              <div class="primary active"></div>
-              <div class="primary disabled"></div>
-            </div>
           </div>
         </div>
       </div>
