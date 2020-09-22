@@ -180,8 +180,8 @@ body {
 }
 .button-grid {
   display: grid;
-  grid-template-rows: repeat(11, 56px);
-  grid-template-columns: 100px repeat(5, 205px);
+  grid-template-rows: repeat(11, auto);
+  grid-template-columns: 100px repeat(5, auto);
   grid-gap: 20px;
 }
 .type-name{

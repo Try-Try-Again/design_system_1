@@ -1,0 +1,22 @@
+{
+  "name": "design_system_1",
+  "version": "1.0.0",
+  "description": "a simple design system for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Try-Try-Again/design_system_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Try-Try-Again/design_system_1/issues"
+  },
+  "homepage": "https://github.com/Try-Try-Again/design_system_1#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
