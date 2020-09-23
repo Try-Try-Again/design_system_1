@@ -1,5 +1,46 @@
 import styled from 'styled-components';
+import { applyStyleModifiers } from 'styled-components-modifiers';
 import { defaultTheme, typeScale } from '../utils';
+
+/*
+ * these modifiers override standard button values
+ * we'll add a 'normal' modifier so that we can use our
+ * declared values in our style guide
+ * TODO:
+ *   move all desciptive values to modifier sections
+ *   that way we can show button appearance without
+ *   using buttons
+ */
+const BUTTON_MODIFIERS = {
+  small: () => `
+    font-size: ${typeScale.helperText};
+    padding: 8px;
+  `,
+  large: () => `
+    font-size: ${typeScale.h5};
+    padding: 16px 24px;
+  `,
+  warning: () => `
+    background-color: ${defaultTheme.status.warningColor};
+    color: ${defaultTheme.textColorInverted}
+
+    &:hover, &:focus {
+    background-color: ${defaultTheme.status.warningColorHover};
+    }
+
+    &:active {
+    background-color: ${defaultTheme.status.warningColorActive};
+  `,
+  warningSecondary: () => `
+    background: none;
+    border-color: ${defaultTheme.status.warningColor};
+  `,
+  secondaryButtonWarning: () => `
+    background: none;
+    border: 2px solid ${defaultTheme.status.warningColor};
+    color: ${defaultTheme.status.warningColor}
+  `,
+};
 
 const Button = styled.button`
   padding: 12px 24px;
@@ -39,6 +80,7 @@ const PrimaryButton = styled(Button)`
     color: ${defaultTheme.textOnDisabled};
     cursor: not-allowed;
   }
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
 export const SecondaryButton = styled(Button)`
@@ -51,6 +93,7 @@ export const SecondaryButton = styled(Button)`
     border-color: ${defaultTheme.disabled};
     cursor: not-allowed;
   }
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
 export const TertiaryButton = styled(Button)`
@@ -62,6 +105,7 @@ export const TertiaryButton = styled(Button)`
     color: ${defaultTheme.textOnDisabled};
     cursor: not-allowed;
   }
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
 export default PrimaryButton;
