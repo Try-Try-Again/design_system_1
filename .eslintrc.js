@@ -24,5 +24,6 @@ module.exports = {
   ],
   rules: {
     'no-underscore-dangle': [2, { allow: ['_id'] }],
+    'import/prefer-default-export': [0],
   },
 };

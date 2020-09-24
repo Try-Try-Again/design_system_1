@@ -12,6 +12,10 @@ import { defaultTheme, typeScale } from '../utils';
  *   using buttons
  */
 const BUTTON_MODIFIERS = {
+  /*
+   * we can pass props into these modifiers using theme-provider?
+   * in fact, we'll probably do this for all values within
+   */
   small: () => `
     font-size: ${typeScale.helperText};
     padding: 8px;

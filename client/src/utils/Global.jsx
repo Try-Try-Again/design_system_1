@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
-import { primaryFont } from './typography';
+import { primaryFont, typeScale } from './typography';
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize()}
@@ -19,6 +19,20 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: ${primaryFont};
   }
-`;
 
-// export { GlobalStyle default };
+  h1 {
+    font-size: ${typeScale.header1};
+  }
+  h2 {
+    font-size: ${typeScale.header2};
+  }
+  h3 {
+    font-size: ${typeScale.header3};
+  }
+  h4 {
+    font-size: ${typeScale.header4};
+  }
+  h5 {
+    font-size: ${typeScale.header5};
+  }
+`;
