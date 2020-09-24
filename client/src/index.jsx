@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MasterGridContainer } from './components/Containers';
+import {
+  MasterGridContainer,
+  PanelContainer,
+  SwatchPanel,
+  SwatchRow,
+  Swatch,
+  SwatchDetail,
+} from './styleguide/Containers';
 // import PrimaryButton, {
 //  SecondaryButton,
 //  TertiaryButton,
@@ -20,14 +27,26 @@ import { GlobalStyle } from './utils';
 //     <GlobalStyle />
 //   </div>
 // );
+//
+// we might be able to eliminae the 'panel-contatiner'
+// if it looks bad, we'll bring it back
+
 const App = () => (
   <div>
     <MasterGridContainer>
-      <h1> Hey Boys </h1>
-      <h2> Hey Girls </h2>
-      <h3> Hey Girls </h3>
-      <h4> Superstar DJ </h4>
-      <h5> Here We Go! </h5>
+      <h1> Design System 1</h1>
+      <PanelContainer>
+        <div> Monotones </div>
+        <SwatchPanel>
+          <SwatchRow>
+            <Swatch>
+              <SwatchDetail>
+                Im a Swatch!
+              </SwatchDetail>
+            </Swatch>
+          </SwatchRow>
+        </SwatchPanel>
+      </PanelContainer>
     </MasterGridContainer>
     <GlobalStyle />
   </div>

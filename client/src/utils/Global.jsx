@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${primaryFont};
+    background-color: #e5e5e5; /* refactor out to colorscheme */
   }
 
   h1 {
