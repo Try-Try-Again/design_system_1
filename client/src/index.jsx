@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom';
 import {
   MasterGridContainer,
   PanelContainer,
-  SwatchPanel,
-  SwatchRow,
-  Swatch,
-  SwatchDetail,
 } from './styleguide/Containers';
+import { MonochromeSwatches, AccentSwatches } from './styleguide/ColorSwatchDisplay';
 // import PrimaryButton, {
 //  SecondaryButton,
 //  TertiaryButton,
@@ -37,15 +34,9 @@ const App = () => (
       <h1> Design System 1</h1>
       <PanelContainer>
         <div> Monotones </div>
-        <SwatchPanel>
-          <SwatchRow>
-            <Swatch>
-              <SwatchDetail>
-                Im a Swatch!
-              </SwatchDetail>
-            </Swatch>
-          </SwatchRow>
-        </SwatchPanel>
+        <MonochromeSwatches />
+        <div> Accents </div>
+        <AccentSwatches />
       </PanelContainer>
     </MasterGridContainer>
     <GlobalStyle />

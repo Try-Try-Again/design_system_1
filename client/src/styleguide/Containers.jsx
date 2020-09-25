@@ -31,6 +31,7 @@ export const SwatchRow = styled.div`
 `;
 
 export const Swatch = styled.div`
+  background-color: ${(props) => props.bgColor || 'white'};
   position: relative;
   flex: 0 0 72px;
   height: 72px;
