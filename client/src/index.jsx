@@ -5,12 +5,12 @@ import {
   PanelContainer,
 } from './styleguide/Containers';
 import { MonochromeSwatches, AccentSwatches } from './styleguide/ColorSwatchDisplay';
+import { GlobalStyle } from './utils';
+
 // import PrimaryButton, {
 //  SecondaryButton,
 //  TertiaryButton,
 // } from './components/Buttons';
-import { GlobalStyle } from './utils';
-
 // const App = () => (
 //   <div>
 //     <PrimaryButton modifiers={['small', 'warning']}> Hey Boys! </PrimaryButton>
