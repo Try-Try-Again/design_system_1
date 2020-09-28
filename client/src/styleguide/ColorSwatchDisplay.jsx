@@ -15,14 +15,14 @@ import { monotones, accents } from '../utils/newColors';
 const ColorSet = ({ colors }) => (
   <SwatchPanel>
     <SwatchRow>
-      { Object.keys(colors).map((color) => (
+      { Object.keys(colors).map((color, index) => (
         <Swatch bgColor={colors[color]} key={color}>
-          <SwatchDetail>
+          <SwatchDetail color={index < 4 ? monotones.base3 : monotones.base03}>
             <div>{colors[color]}</div>
             <div>{color}</div>
           </SwatchDetail>
         </Swatch>
-      )) }
+      ))}
     </SwatchRow>
   </SwatchPanel>
 );

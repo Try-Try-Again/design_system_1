@@ -43,4 +43,5 @@ export const SwatchDetail = styled.div`
   font-size: 8px;
   margin-bottom: 1em;
   margin-left: 1em;
+  color: ${(props) => props.color};
 `;

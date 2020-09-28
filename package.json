@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --coverage --watch",
     "build-prod": "webpack --watch --mode=production",
-    "build-dev": "webpack --watch --mode=development"
+    "build-dev": "webpack --watch --mode=development",
+    "dev-server": "./node_modules/.bin/webpack-dev-server"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/Try-Try-Again/design_system_1#readme",
   "dependencies": {
     "polished": "^3.6.7",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.2.0",
