@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 import { primaryFont, typeScale } from './typography';
+import { lightTheme } from './themes';
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize()}
@@ -18,7 +19,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${primaryFont};
-    background-color: #e5e5e5; /* refactor out to colorscheme */
+    background-color: ${lightTheme.backgroundSecondary};
+    color: ${lightTheme.textSecondary};
   }
 
   h1 {

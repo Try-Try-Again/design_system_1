@@ -1,6 +1,7 @@
 import {
   blue, neutral, yellow, green, red,
 } from './colors';
+import { monotones } from './newColors';
 import { primaryFont } from './typography';
 
 export const defaultTheme = {
@@ -26,4 +27,9 @@ export const defaultTheme = {
   },
 };
 
-export const nextTheme = {};
+export const lightTheme = {
+  backgroundPrimary: monotones.base3,
+  backgroundSecondary: monotones.base2,
+  textPrimary: monotones.base00,
+  textSecondary: monotones.base1,
+};

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lightTheme } from '../utils/themes';
 
 export const MasterGridContainer = styled.div`
   display: grid;
@@ -19,7 +20,7 @@ export const PanelContainer = styled.div`
 export const SwatchPanel = styled.div`
   display: grid;
   grid-gap: 15px;
-  background-color: #FFFFFF;
+  background-color: ${lightTheme.backgroundPrimary};
   padding: 20px;
 `;
 
