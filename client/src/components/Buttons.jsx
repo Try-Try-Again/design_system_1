@@ -56,32 +56,32 @@ const Button = styled.button`
   transition: background-color 0.2s linear, color 0.2s linear;
 
   &:hover {
-    background-color: ${defaultTheme.primaryHoverColor};
-    color: ${defaultTheme.textColorOnPrimary};
+    background-color: ${(props) => props.theme.textPrimary};
+    color: ${(props) => props.theme.backgroundPrimary};
   }
 
   &:focus {
     /* this is that ugly focus outline change later */
-    outline: 3px solid ${defaultTheme.primaryHoverColor};
-    outline-offset: 2px;
+    /*outline: 3px solid ${defaultTheme.primaryHoverColor};*/
+    /*outline-offset: 2px;*/
   }
 
   &:active {
-    background-color: ${defaultTheme.primaryActiveColor};
+    background-color: ${(props) => props.theme.textPrimaryInverted};
     border-color: ${defaultTheme.primaryActiveColor};
-    color: ${defaultTheme.textColorOnPrimary};
+    color: ${(props) => props.theme.backgroundPrimaryInverted};
   }
 `;
 
-const PrimaryButton = styled(Button)`
-  background-color: ${defaultTheme.primaryColor};
+export const PrimaryButton = styled(Button)`
+  background-color: ${(props) => props.theme.textSecondary};
   border: none;
-  color: white;
+  color: ${(props) => props.theme.backgroundSecondary};
 
   /* this is seprate from primary on her style. we might move it on ours */
   &:disabled {
-    background-color: ${defaultTheme.disabled};
-    color: ${defaultTheme.textOnDisabled};
+    background-color: ${(props) => props.theme.backgroundSecondary};
+    color: ${(props) => props.textSecondary};
     cursor: not-allowed;
   }
   ${applyStyleModifiers(BUTTON_MODIFIERS)}
@@ -112,4 +112,4 @@ export const TertiaryButton = styled(Button)`
   ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 
-export default PrimaryButton;
+// export default PrimaryButton;

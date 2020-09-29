@@ -30,13 +30,27 @@ export const defaultTheme = {
 export const lightTheme = {
   backgroundPrimary: monotones.base3,
   backgroundSecondary: monotones.base2,
+
+  backgroundPrimaryInverted: monotones.base03,
+  backgroundSecondaryInverted: monotones.base02,
+
   textPrimary: monotones.base00,
   textSecondary: monotones.base1,
+
+  textPrimaryInverted: monotones.base0,
+  textSecondaryInverted: monotones.base01,
 };
 
 export const darkTheme = {
   backgroundPrimary: monotones.base03,
   backgroundSecondary: monotones.base02,
+
+  backgroundPrimaryInverted: monotones.base3,
+  backgroundSecondaryInverted: monotones.base2,
+
   textPrimary: monotones.base0,
   textSecondary: monotones.base01,
+
+  textPrimaryInverted: monotones.base00,
+  textSecondaryInverted: monotones.base1,
 };

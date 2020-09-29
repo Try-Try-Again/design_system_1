@@ -7,6 +7,7 @@ import {
 } from './styleguide/Containers';
 import { MonochromeSwatches, AccentSwatches } from './styleguide/ColorSwatchDisplay';
 import { GlobalStyle, darkTheme, lightTheme } from './utils';
+import { PrimaryButton } from './components/Buttons';
 
 // import PrimaryButton, {
 //  SecondaryButton,
@@ -34,13 +35,11 @@ const App = () => {
 
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme : lightTheme}>
-      <button
-        type="button"
-        style={{ margin: '0 16px 24px', padding: '8px', background: 'none' }}
+      <PrimaryButton
         onClick={() => setUseDarkTheme(!useDarkTheme)}
       >
         { useDarkTheme ? 'Light Theme' : 'Dark Theme' }
-      </button>
+      </PrimaryButton>
       <MasterGridContainer>
         <h1> Design System 1</h1>
         <PanelContainer>
