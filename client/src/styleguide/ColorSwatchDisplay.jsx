@@ -32,8 +32,6 @@ export const MonochromeSwatches = () => <ColorSet colors={monotones} />;
 export const AccentSwatches = () => <ColorSet colors={accents} />;
 
 const validColorValues = ({ colors }) => {
-  // here we will check to make sure all values are hex numbers
-  // and that all keys are strings
   const colorValues = Object.values(colors);
   const re = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
   for (let i = 0; i < colorValues.length; i += 1) {

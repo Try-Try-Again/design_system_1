@@ -19,8 +19,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${primaryFont};
-    background-color: ${lightTheme.backgroundSecondary};
-    color: ${lightTheme.textSecondary};
+    background-color: ${(props) => props.theme.backgroundSecondary};
+    color: ${(props) => props.theme.textSecondary};
   }
 
   h1 {

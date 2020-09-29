@@ -33,3 +33,10 @@ export const lightTheme = {
   textPrimary: monotones.base00,
   textSecondary: monotones.base1,
 };
+
+export const darkTheme = {
+  backgroundPrimary: monotones.base03,
+  backgroundSecondary: monotones.base02,
+  textPrimary: monotones.base0,
+  textSecondary: monotones.base01,
+};
