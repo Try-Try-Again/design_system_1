@@ -4,6 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import {
   MasterGridContainer,
   PanelContainer,
+  TitleBox,
+  NavBar,
 } from './styleguide/Containers';
 import { MonochromeSwatches, AccentSwatches } from './styleguide/ColorSwatchDisplay';
 import { GlobalStyle, darkTheme, lightTheme } from './utils';
@@ -35,17 +37,22 @@ const App = () => {
 
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme : lightTheme}>
-      <PrimaryButton
-        onClick={() => setUseDarkTheme(!useDarkTheme)}
-      >
-        { useDarkTheme ? 'Light Theme' : 'Dark Theme' }
-      </PrimaryButton>
+      <NavBar>
+        <PrimaryButton
+          style={{ justifySelf: 'flex-end' }}
+          onClick={() => setUseDarkTheme(!useDarkTheme)}
+        >
+          { useDarkTheme ? 'Light Theme' : 'Dark Theme' }
+        </PrimaryButton>
+      </NavBar>
       <MasterGridContainer>
-        <h1> Design System 1</h1>
+        <TitleBox>
+          <h1> Design System 1</h1>
+        </TitleBox>
         <PanelContainer>
-          <div> Monotones </div>
+          <h5> Monotones </h5>
           <MonochromeSwatches />
-          <div> Accents </div>
+          <h5> Accents </h5>
           <AccentSwatches />
         </PanelContainer>
       </MasterGridContainer>

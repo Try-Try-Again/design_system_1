@@ -56,8 +56,8 @@ const Button = styled.button`
   transition: background-color 0.2s linear, color 0.2s linear;
 
   &:hover {
-    background-color: ${(props) => props.theme.textPrimary};
-    color: ${(props) => props.theme.backgroundPrimary};
+    color: ${(props) => props.theme.backgroundPrimaryInverted};
+    background-color: ${(props) => props.theme.textPrimaryInverted};
   }
 
   &:focus {
@@ -67,16 +67,16 @@ const Button = styled.button`
   }
 
   &:active {
-    background-color: ${(props) => props.theme.textPrimaryInverted};
+    background-color: ${(props) => props.theme.textSecondary};
+    color: ${(props) => props.theme.backgroundSecondary};
     border-color: ${defaultTheme.primaryActiveColor};
-    color: ${(props) => props.theme.backgroundPrimaryInverted};
   }
 `;
 
 export const PrimaryButton = styled(Button)`
-  background-color: ${(props) => props.theme.textSecondary};
+  background-color: ${(props) => props.theme.textPrimary};
+  color: ${(props) => props.theme.backgroundPrimary};
   border: none;
-  color: ${(props) => props.theme.backgroundSecondary};
 
   /* this is seprate from primary on her style. we might move it on ours */
   &:disabled {

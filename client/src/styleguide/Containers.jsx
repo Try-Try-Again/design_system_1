@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 // import { props } from '../utils/themes';
+//
 
 export const MasterGridContainer = styled.div`
   display: grid;
@@ -14,7 +15,7 @@ export const PanelContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 `;
 
 export const SwatchPanel = styled.div`
@@ -45,4 +46,13 @@ export const SwatchDetail = styled.div`
   margin-bottom: 1em;
   margin-left: 1em;
   color: ${(props) => props.color};
+`;
+
+export const TitleBox = styled.div`
+  justify-self: center;
+`;
+
+export const NavBar = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
 `;
