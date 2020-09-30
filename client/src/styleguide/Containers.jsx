@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-// import { props } from '../utils/themes';
-//
 
 export const MasterGridContainer = styled.div`
   display: grid;
@@ -19,9 +17,16 @@ export const PanelContainer = styled.div`
 `;
 
 export const SwatchPanel = styled.div`
-  display: grid;
   grid-gap: 15px;
   background-color: ${(props) => props.theme.backgroundPrimary};
+  color: ${(props) => props.theme.textPrimary};
+  padding: 20px;
+`;
+
+export const SwatchPanelInverted = styled.div`
+  grid-gap: 15px;
+  background-color: ${(props) => props.theme.backgroundPrimaryInverted};
+  color: ${(props) => props.theme.textPrimaryInverted};
   padding: 20px;
 `;
 

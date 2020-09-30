@@ -7,6 +7,7 @@ import {
   TitleBox,
   NavBar,
 } from './styleguide/Containers';
+import { Typography } from './styleguide/Typography';
 import { MonochromeSwatches, AccentSwatches } from './styleguide/ColorSwatchDisplay';
 import { GlobalStyle, darkTheme, lightTheme } from './utils';
 import { PrimaryButton } from './components/Buttons';
@@ -54,6 +55,8 @@ const App = () => {
           <MonochromeSwatches />
           <h5> Accents </h5>
           <AccentSwatches />
+          <h5> Typeography </h5>
+          <Typography />
         </PanelContainer>
       </MasterGridContainer>
       <GlobalStyle />
